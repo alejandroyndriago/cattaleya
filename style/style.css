@@ -1,4 +1,130 @@
-.banerCattaleya {
+@font-face {
+  font-family: "Bird";
+  src: url("../recursos/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url(../recursos/maquillajelogo.jpg);
+  background-size: 100vw 130%;
+  height: 15rem;
+}
+
+.navegacion {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Bird;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 1.5rem;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  height: 3rem;
+}
+
+.navegacion a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  width: 150px;
+  color: pink;
+  text-shadow: 1px 2px 3px purple;
+}
+
+.navegacion a:hover {
+  background-color: lightpink;
+  color: white;
+  border-radius: 100px;
+}
+
+.seccionNosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: pink;
+  padding-top: 1rem;
+}
+.seccionNosotros .nosotros {
     display: flex;
-    background-color: aqua;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.seccionNosotros .nosotros .tituloNosotros {
+    font-family: bird;
+    color: white;
+    text-shadow: 1px 2px 3px purple;
+}
+
+.seccionNosotros .nosotros p {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-weight: bold;
+    color: purple;
+}
+
+.seccionNosotros .historiaFilosofia {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.seccionNosotros .historiaFilosofia .historia h2,
+.seccionNosotros .historiaFilosofia .filosofia h2 {
+    font-family: bird;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(163, 121, 150);
+    text-shadow: 1px 2px rgb(255, 255, 255);
+}
+
+.seccionNosotros .historiaFilosofia .historia p,
+.seccionNosotros .historiaFilosofia .filosofia p {
+    display: flex;
+    text-align: center;
+    margin: 0 1rem 2rem;
+    padding: 1rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.334);
+    color: rgba(245, 88, 211, 0.778);
+    border-radius: 50px;
+}
+
+
+.video-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-section video {
+  width: 100%;
+  height: auto;
+}
+/* .carousel-inner .carousel-item img {
+    width: 100vw;
+
+}
+
+
+ */
+
+.footer {
+  display: flex;
+  width: 100vw;
+  height: 30%;
+  background-color: red;
+  background-image: url("../recursos/fondofootter.jpg");
 }
