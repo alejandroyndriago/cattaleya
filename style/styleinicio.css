@@ -1,0 +1,115 @@
+@font-face {
+    font-family: "Bird";
+    src: url("../recursos/Birds\ of\ Paradise\ ©\ PERSONAL\ USE\ ONLY.ttf");
+  }
+:root{
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --transition: all 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: var(--font-mono);
+}
+
+section{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+    ;
+}
+
+section h1{
+    font-size: 3em;
+}
+
+section h2{
+    font-family: bird;
+    color: violet;
+    text-shadow: 1px 1px 2px #003DFF;
+    text-align:center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 2.5em
+}
+
+section form{
+    background-color: rgba(0, 255, 255, 0.272);
+    font-family: bird;
+    color: pink;
+    text-shadow: 1px 1px 3px purple;
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    padding: 2rem;
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,.1);
+}
+
+section form label{
+    width: 100%;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+}
+
+section form input{
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: pink;
+    background-color: #eee;
+}
+
+section form input[type='submit']{
+    margin-top: 1.5em;
+    background-color: #ff00aa;
+    color: #fff;
+    font-family: var(--font-mono);
+    transition: var(--transition);
+} 
+
+section form input[type='submit']:active{
+    transform: scale(0.97);
+}
+
+section p{
+    margin-top: 1.5em;
+
+}
+
+
+section p a{
+    text-decoration: none;
+    color: #ff00f7;
+}
+
+
+/* Home */
+
+section button{
+    background-color: #003DFF;
+    color: #fff;
+    font-family: bird;
+    transition: var(--transition);
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 9px;
+    margin-top: 1.5em;
+    font-size: 1em;
+}
