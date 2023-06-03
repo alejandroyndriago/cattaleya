@@ -6,6 +6,9 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: beige;
+}
 
 header {
   background-image: url(../recursos/maquillajecattaleya.jpg);
@@ -21,7 +24,7 @@ header {
   font-weight: bold;
   letter-spacing: 4px;
   font-size: 1.5rem;
-  width: 100vw;
+  width: 100%;
   background-color: rgb(255, 255, 255);
   height: 3rem;
 }
@@ -30,8 +33,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
-
   width: 150px;
   color: pink;
   text-shadow: 1px 2px 3px purple;
@@ -52,60 +53,60 @@ header {
   padding-top: 1rem;
 }
 .seccionNosotros .nosotros {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 
 .seccionNosotros .nosotros .tituloNosotros {
-    font-family: bird;
-    color: white;
-    text-shadow: 1px 2px 3px purple;
+  font-family: bird;
+  color: white;
+  text-shadow: 1px 2px 3px purple;
 }
 
 .seccionNosotros .nosotros p {
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: justify;
-    font-weight: bold;
-    color: purple;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-weight: bold;
+  color: purple;
 }
 
 .seccionNosotros .historiaFilosofia {
-    display: flex;
-    flex-direction: row;
-    margin-top: 2rem;
-    padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+  padding: 0 2rem;
 }
 
 .seccionNosotros .historiaFilosofia .historia h2,
 .seccionNosotros .historiaFilosofia .filosofia h2 {
-    font-family: bird;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: bold;
-    color: rgb(163, 121, 150);
-    text-shadow: 1px 2px rgb(255, 255, 255);
+  font-family: bird;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(163, 121, 150);
+  text-shadow: 1px 2px rgb(255, 255, 255);
 }
 
 .seccionNosotros .historiaFilosofia .historia p,
 .seccionNosotros .historiaFilosofia .filosofia p {
-    display: flex;
-    text-align: center;
-    margin: 0 1rem 2rem;
-    padding: 1rem;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.334);
-    color: rgba(245, 88, 211, 0.778);
-    border-radius: 50px;
+  display: flex;
+  text-align: center;
+  margin: 0 1rem 2rem;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.334);
+  color: rgba(245, 88, 211, 0.778);
+  border-radius: 50px;
 }
 
 .carouselC {
   display: flex;
   flex-direction: row;
-background-color: pink;
+  background-color: pink;
 }
 
 .nuestrosServ {
@@ -113,10 +114,12 @@ background-color: pink;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(https://png.pngtree.com/png-clipart/20221229/big/pngtree-gold-frame-png-image_8823211.png);
-  background-size: 110% 100%;
+  background-image: url(../recursos/borde333.png);
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
+  border: solid rgba(72, 0, 255, 0.293);
+  border-width: 5px 0 5px 5px;
   width: 30%;
 }
 .nuestrosServ h3 {
@@ -126,50 +129,55 @@ background-color: pink;
   font-size: 30px;
   letter-spacing: 2px;
   text-align: center;
-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+.nuestrosServ li {
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px purple;
+  list-style: none;
 }
 
 .carousel {
   display: flex;
   flex-direction: row;
-  border: 7px solid rgba(72, 0, 255, 0.113);
-width: 70%;
-height: 50%;
-
+  border: solid rgba(72, 0, 255, 0.293);
+  border-width: 5px 5px 5px 0;
+  width: 70%;
+  height: 50%;
 }
 .carousel-item img {
   width: 100%;
   height: 50vh;
-  
-  }
-
-/* .video-section {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-} */
-
-.video-section video {
-  width: 100%;
-  height: auto;
 }
 
 .footer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 2rem;
-  width: 100vw;
-  height: 30%;
-  background-color: lightpink;
+  padding-top: 1rem;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(108, 87, 98);
   color: rgb(255, 255, 255);
-  font-weight: bold;
   text-shadow: 1px 1px 2px purple;
 }
 
-.footer h1 {
-  font-family: bird;
+.footerIz {
   display: flex;
-  text-align: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 5px;
+}
+.footerIz a {
+  color: white;
+  text-decoration: none;
+}
+.footerDer {
+justify-content: flex-end;
+padding-right: 5px;
+align-items: center;
+text-align: end;
 }

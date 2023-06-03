@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/styleinicio.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/styleinicio.css" />
+    <link rel="stylesheet" href="../style/style.css" />
     <title>Registro</title>
-</head>
-<body>
-    <section>
+  </head>
+  <body>
+    <header></header>
+
+    <nav class="nav nav-pills navegacion">
+      <a class="nav-link" href="../index.html">Nosotros</a>
+      <a class="nav-link" href="#">Historia</a>
+      <a class="nav-link" href="#">Productos</a>
+      <a class="nav-link" href="#">Spa</a>
+      <a class="nav-link" href="./login.html">Sign In</a>
+      <a class="nav-link" href="#">Sign Up</a>
+    </nav>
+
+    <section class="registro">
+      <div class="registrarse">
         <h2>Registro</h2>
         <form id="signupForm">
-            <label>Nombre</label>
-            <input type="text" placeholder="..." id="name" required autofocus>
-            <label>Mail</label>
-            <input type="email" placeholder="..." id="email" required>
-            <label>Contraseña</label>
-            <input type="password" placeholder="..." id="password" required>
-            <input type="submit" value="Registro">
+          <label>Nombre</label>
+          <input type="text" placeholder="..." id="name" required autofocus />
+          <label>Mail</label>
+          <input type="email" placeholder="..." id="email" required />
+          <label>Contraseña</label>
+          <input type="password" placeholder="..." id="password" required />
+          <input type="submit" value="Registro" />
         </form>
-        <p>Ya tienes una cuenta? <a href="./login.html">Login</a></p>
+      </div>
+      <div class="ubicado">
+        <h2>Visitanos</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.60461421675!2d-74.05585018217067!3d4.664373561234743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b042621de1f%3A0x7a5f7fd55e93bef6!2sSpaces%20-%20Bogota%2C%20Spaces%2080%20Once!5e0!3m2!1ses!2sco!4v1685801800562!5m2!1ses!2sco" width="600" height="450" " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
+
+    <footer id="footerR" class="footer">
+      <div class="footerIz">
+        <a href="#">Sauna</a>
+        <a href="#">Politica de privacidad</a>
+        <a href="#">Acuerdo </a>
+      </div>
+      <div class="footerCent">copyrigth</div>
+      <div class="footerDer">
+        <div>Pagina creada</div>
+        <div>a inicios del</div>
+        <div>2021</div>
+      </div>
+    </footer>
     <script src="../script/jsregistro.js"></script>
-</body>
+  </body>
 </html>
